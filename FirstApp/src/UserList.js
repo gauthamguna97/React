@@ -3,9 +3,11 @@ import React, { Component } from "react"
 
 class UserList extends Component {
 
-	createList(item) {
-		console.log(item);
-		return <li key={item.key}>{item.text}</li>
+	createList(i) {
+		console.log('count')
+		console.log(i);
+		return <li key={i.key}>{i.text}</li>
+		//
 	};
 	
 	render(){
@@ -15,7 +17,8 @@ class UserList extends Component {
 		return(
 			<ul className="TheList">
 				{listItems}
-			</ul>	
+			</ul>
+			//	
 		)
 	};
 };
