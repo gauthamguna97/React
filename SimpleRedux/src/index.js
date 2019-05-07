@@ -10,6 +10,6 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <App videoSrc='blob:https://t.justdial.com/2998a096-22e2-4cad-948e-5cec4b18874b' />
   </Provider>
   , document.querySelector('.container'));
